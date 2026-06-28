@@ -19,7 +19,7 @@ This system estimates how likely a pitcher is to land on the injured list with a
 > - **Problem.** Arm injuries are sidelining elite pitchers earlier and more often, at enormous cost to clubs and the league. Most published tools predict injury across a full season. Very little work tries to do it at the level of a single outing.
 > - **Approach.** I built a dataset of 103,357 individual pitching outings (1,602 pitchers across five seasons) from three public sources, engineered leakage-safe workload features, and benchmarked a regularized logistic regression against a tuned LightGBM classifier on a strict season-based temporal split.
 > - **Result, stated plainly.** Injury prediction at the game level, over a two-week window, is hard. Raw model lift over the 2.85% base injury rate sits around 1.3x. The real payoff comes after the model runs, when those probabilities get binned into percentile risk tiers and a stubborn player-type signal gets pulled apart from true acute risk. That last step lifts the actionable high-risk tier to 3.06x the base rate.
-> - **Why it fits this kind of role.** The pipeline runs end to end, from raw ingestion through cleaning, feature engineering, and modeling, and it lands on something performance staff can act on. That loop is the daily work of an athletics analytics group.
+
 
 ---
 
