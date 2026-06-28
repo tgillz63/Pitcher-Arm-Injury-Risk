@@ -266,19 +266,22 @@ The exploratory work turned up a few patterns that matter for how a staff thinks
 
 ### Injury Risk by Age
 
-![Pitcher age density: injured vs. healthy outings](reports/figures/age_density.png)
+<img width="621" height="467" alt="Screenshot 2026-06-28 at 7 14 21 PM" src="https://github.com/user-attachments/assets/d55fb9de-9b2d-42fe-992c-949dc81f4695" />
+
 
 Pitchers between 25 and 31 carry elevated injury rates. Pitchers 32 and older show lower rates, which looks backwards at first glance. Two explanations probably both apply. Older pitchers tend to throw slower and get managed more carefully. On top of that, survivorship is doing some quiet work, since a pitcher who is still in the majors at 33 is, by selection, one of the durable ones who dodged a serious arm injury earlier. The data cannot fully pull those apart, and I would rather flag that than overclaim.
 
 ### The Velocity Arms Race
 
-![Average fastball velocity histograms by season](reports/figures/velocity_histograms.png)
+<img width="625" height="469" alt="Screenshot 2026-06-28 at 7 15 40 PM" src="https://github.com/user-attachments/assets/e58b5c93-8031-4b79-82c3-a1fb62554fae" />
+
 
 The season-by-season histograms, restricted to outings of 18 or more pitches so tiny relief cameos do not skew the picture, tell a two-part story. The mean fastball creeps up year over year. At the same time, the share of outings averaging 98-plus MPH rises sharply. That is the velocity trend MLB's report ties straight to the injury climb.
 
 ### Arm Injuries Over Time
 
-![Total arm injuries by season](reports/figures/injuries_by_season.png)
+<img width="623" height="465" alt="Screenshot 2026-06-28 at 7 16 22 PM" src="https://github.com/user-attachments/assets/1f7eb9d6-743d-41a0-97a3-9aa58ccb7430" />
+
 
 Arm injuries climbed steadily from 2021 through 2024, in line with MLB's findings. The 2021 spike reads best as a COVID artifact. The shortened and partly canceled 2020 season meant some pitchers, including minor leaguers who did not play at all that year, ramped back up in 2021 underconditioned.
 
@@ -295,11 +298,11 @@ The four biggest features by global SHAP value:
 3. **3-game innings average** (how deep the recent outings ran)
 4. **Game-day fastball velocity** (effort and stuff on the day)
 
-![Global SHAP summary](reports/figures/shap_summary.png)
+<img width="1432" height="1182" alt="shap_summary" src="https://github.com/user-attachments/assets/a07629bb-3ae2-465f-87e2-15dfa91b6c44" />
 
 The pipeline also produces per-outing waterfall plots, so any single flagged appearance breaks down into the exact features pushing its risk up or down. That turns an abstract score into something a pitching coach and an analyst can sit down and talk through.
 
-![Per-outing SHAP waterfall example](reports/figures/shap_waterfall_example.png)
+<img width="1371" height="1100" alt="shap_waterfall_694973_2025-07-01" src="https://github.com/user-attachments/assets/183721a5-bcc2-4892-b681-9989691b8132" />
 
 ---
 
@@ -416,7 +419,7 @@ Built by **Tommy Gillan**. I hold an M.S. in Business Analytics with a Sports An
 
 This project lives right where I want to work. Rigorous data engineering and modeling on one side, plain communication to the people who make the calls on the other. The modeling is only half the job. The rest is translation, and it is the part a lot of analytics shops underrate. A probability has to become a risk tier a coach will trust before he sits a starter. The SHAP output has to read like a conversation instead of a wall of colored bars. And the model's blind spots have to be the kind of thing a staff can plan around ahead of time.
 
-*Connect:* [LinkedIn](#) · [Email](#) · [Portfolio](#)
+*Connect:* [LinkedIn](https://www.linkedin.com/in/tommy-gillan/) · [Email](thomasgillan63@gmail.com) · [Portfolio](https://github.com/tgillz63)
 
 ---
 
